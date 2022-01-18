@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+        <org.eventb.core.poIdentifier name="PROPERTIES" org.eventb.core.type="ℙ(PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="DEVICE" org.eventb.core.type="ℙ(DEVICE)"/>
+        <org.eventb.core.poIdentifier name="EmbeddedDevice" org.eventb.core.type="DEVICE"/>
+        <org.eventb.core.poIdentifier name="Sensor" org.eventb.core.type="DEVICE"/>
+        <org.eventb.core.poIdentifier name="Actuator" org.eventb.core.type="DEVICE"/>
+        <org.eventb.core.poPredicate name="EmbeddedDevicf" org.eventb.core.predicate="partition(DEVICE,{Sensor},{Actuator},{EmbeddedDevice})" org.eventb.core.source="/IOT_MS2/c0_dp.buc|org.eventb.core.contextFile#c0_dp|org.eventb.core.axiom#3"/>
+        <org.eventb.core.poIdentifier name="D" org.eventb.core.type="ℙ(D)"/>
+        <org.eventb.core.poIdentifier name="ACTIONS" org.eventb.core.type="ℙ(ACTIONS)"/>
+        <org.eventb.core.poIdentifier name="MS" org.eventb.core.type="ℙ(MS)"/>
+        <org.eventb.core.poIdentifier name="TEMPLATE" org.eventb.core.type="ℙ(TEMPLATE)"/>
+        <org.eventb.core.poIdentifier name="DATAFORMAT" org.eventb.core.type="ℙ(DATAFORMAT)"/>
+        <org.eventb.core.poIdentifier name="PROTOCOL" org.eventb.core.type="ℙ(PROTOCOL)"/>
+        <org.eventb.core.poIdentifier name="REGISTRY" org.eventb.core.type="ℙ(REGISTRY)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="deviceId" org.eventb.core.type="ℙ(DEVICE×PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="deviceType" org.eventb.core.type="ℙ(DEVICE)"/>
+        <org.eventb.core.poIdentifier name="hosting" org.eventb.core.type="ℙ(DEVICE×SYSTEM)"/>
+        <org.eventb.core.poIdentifier name="Output" org.eventb.core.type="ℙ(ℙ(DEVICE×ℙ(PROPERTIES×PROPERTIES))×DEVICE)"/>
+        <org.eventb.core.poIdentifier name="obsProperty" org.eventb.core.type="ℙ(PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="Trigger" org.eventb.core.type="ℙ(USER×DEVICE)"/>
+        <org.eventb.core.poIdentifier name="featureOfInterest" org.eventb.core.type="ℙ(PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="Input" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="Stimulus" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="sensingData" org.eventb.core.type="ℙ(DEVICE)"/>
+        <org.eventb.core.poIdentifier name="sensingFlag" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="Context" org.eventb.core.type="ℙ(PROPERTIES×PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="Event" org.eventb.core.type="ℙ(DEVICE×PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="Action" org.eventb.core.type="ℙ(PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="Time" org.eventb.core.type="ℙ(DEVICE)"/>
+        <org.eventb.core.poIdentifier name="Platform" org.eventb.core.type="ℙ(SYSTEM)"/>
+        <org.eventb.core.poIdentifier name="Identity" org.eventb.core.type="ℙ(PROPERTIES)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(DEVICE×PROPERTIES))∈DEVICE → (∅ ⦂ ℙ(PROPERTIES))" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(DEVICE×SYSTEM))∈DEVICE → (∅ ⦂ ℙ(SYSTEM))" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×DEVICE))∈(∅ ⦂ ℙ(USER)) ↔ DEVICE∨(∅ ⦂ ℙ(USER×DEVICE))∈(∅ ⦂ ℙ(USER)) ↔ DEVICE" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#INITIALISATION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(DEVICE×PROPERTIES))∈DEVICE ↔ (∅ ⦂ ℙ(PROPERTIES))" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#INITIALISATION\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD9"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(DEVICE))⊆DEVICE∧(∅ ⦂ ℙ(DEVICE))⊆DEVICE" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#@"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#@"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#INITIALISATION\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(PROPERTIES))⊆PROPERTIES∧(∅ ⦂ ℙ(PROPERTIES))⊆PROPERTIES" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#INITIALISATION\/inv13\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD12"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv14/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(PROPERTIES×PROPERTIES))∈(∅ ⦂ ℙ(PROPERTIES)) ↔ (∅ ⦂ ℙ(PROPERTIES))" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#INITIALISATION\/inv14\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD13"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv15/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(DEVICE×ℙ(PROPERTIES×PROPERTIES))×DEVICE))∈((∅ ⦂ ℙ(DEVICE)) ↔ ((∅ ⦂ ℙ(PROPERTIES)) ↔ (∅ ⦂ ℙ(PROPERTIES)))) ↔ (∅ ⦂ ℙ(DEVICE))" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#INITIALISATION\/inv15\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD14"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTfeatureOfInteresu" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Event'" org.eventb.core.type="ℙ(DEVICE×PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="Platform'" org.eventb.core.type="ℙ(SYSTEM)"/>
+        <org.eventb.core.poIdentifier name="obsProperty'" org.eventb.core.type="ℙ(PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="featureOfInterest'" org.eventb.core.type="ℙ(PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="Identity'" org.eventb.core.type="ℙ(PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="Trigger'" org.eventb.core.type="ℙ(USER×DEVICE)"/>
+        <org.eventb.core.poIdentifier name="Context'" org.eventb.core.type="ℙ(PROPERTIES×PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="deviceId'" org.eventb.core.type="ℙ(DEVICE×PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="sensingFlag'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="Input'" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="deviceType'" org.eventb.core.type="ℙ(DEVICE)"/>
+        <org.eventb.core.poIdentifier name="Time'" org.eventb.core.type="ℙ(DEVICE)"/>
+        <org.eventb.core.poIdentifier name="sensingData'" org.eventb.core.type="ℙ(DEVICE)"/>
+        <org.eventb.core.poIdentifier name="Action'" org.eventb.core.type="ℙ(PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="hosting'" org.eventb.core.type="ℙ(DEVICE×SYSTEM)"/>
+        <org.eventb.core.poIdentifier name="Stimulus'" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="Output'" org.eventb.core.type="ℙ(ℙ(DEVICE×ℙ(PROPERTIES×PROPERTIES))×DEVICE)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPfeatureOfInteresu" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTIDENTfeatureOfInteresu" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poSequent name="Deployment/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresv"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="deviceId{d ↦ uri}∈DEVICE → Identity" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#Deployment\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Deployment/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresv"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="hosting{d ↦ p}∈DEVICE → Platform" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#Deployment\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTfeatureOfInteresv" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="deviceId'" org.eventb.core.type="ℙ(DEVICE×PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="deviceType'" org.eventb.core.type="ℙ(DEVICE)"/>
+        <org.eventb.core.poIdentifier name="d" org.eventb.core.type="DEVICE"/>
+        <org.eventb.core.poIdentifier name="hosting'" org.eventb.core.type="ℙ(DEVICE×SYSTEM)"/>
+        <org.eventb.core.poIdentifier name="p" org.eventb.core.type="SYSTEM"/>
+        <org.eventb.core.poIdentifier name="uri" org.eventb.core.type="PROPERTIES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPfeatureOfInteresv" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTIDENTfeatureOfInteresv" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="d∈DEVICE" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#1|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="uri∈Identity" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#1|org.eventb.core.guard#+"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="p∈Platform" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#1|org.eventb.core.guard#,"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="Sensing/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresw"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{i ↦ sensor}∩{s ↦ sensor}∩(∅ ⦂ ℙ(USER×DEVICE))∈Input ↔ DEVICE∨{i ↦ sensor}∩{s ↦ sensor}∩(∅ ⦂ ℙ(USER×DEVICE))∈Stimulus ↔ DEVICE" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#I"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#Sensing\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Sensing/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresw"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{sensor ↦ sensing}∈DEVICE ↔ Action" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#I"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#Sensing\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD9"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="Sensing/inv14/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresw"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{obs ↦ foi}∈obsProperty ↔ featureOfInterest" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#I"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#Sensing\/inv14\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD13"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTfeatureOfInteresw" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Event'" org.eventb.core.type="ℙ(DEVICE×PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="Trigger'" org.eventb.core.type="ℙ(USER×DEVICE)"/>
+        <org.eventb.core.poIdentifier name="Context'" org.eventb.core.type="ℙ(PROPERTIES×PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="sensingFlag'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="foi" org.eventb.core.type="PROPERTIES"/>
+        <org.eventb.core.poIdentifier name="obs" org.eventb.core.type="PROPERTIES"/>
+        <org.eventb.core.poIdentifier name="sensor" org.eventb.core.type="DEVICE"/>
+        <org.eventb.core.poIdentifier name="s" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="sensing" org.eventb.core.type="PROPERTIES"/>
+        <org.eventb.core.poIdentifier name="i" org.eventb.core.type="USER"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPfeatureOfInteresw" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTIDENTfeatureOfInteresw" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="i∈Input∧s∈Stimulus" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#I|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="i≠s" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#I|org.eventb.core.guard#,"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="sensor∈DEVICE" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#I|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="sensing∈Action" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#I|org.eventb.core.guard#."/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="obs∈obsProperty∧foi∈featureOfInterest" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#I|org.eventb.core.guard#1"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="Actuation/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresx"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Event∩{actuator ↦ actuableProperty}∩(∅ ⦂ ℙ(DEVICE×PROPERTIES))∈DEVICE ↔ Action" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#J"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#Actuation\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD9"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTfeatureOfInteresx" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Event'" org.eventb.core.type="ℙ(DEVICE×PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="actuableProperty" org.eventb.core.type="PROPERTIES"/>
+        <org.eventb.core.poIdentifier name="actuator" org.eventb.core.type="DEVICE"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPfeatureOfInteresx" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTIDENTfeatureOfInteresx" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="actuator∈DEVICE" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#J|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="actuableProperty∈Action" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#J|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="Result/inv15/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTALLHYPfeatureOfInteresy"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Output∪{{data ↦ {obs ↦ foi}} ↦ t}∈(sensingData ↔ (obsProperty ↔ featureOfInterest)) ↔ Time" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#K"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#H"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poSequent#Result\/inv15\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD14"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTfeatureOfInteresy" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="data" org.eventb.core.type="DEVICE"/>
+        <org.eventb.core.poIdentifier name="foi" org.eventb.core.type="PROPERTIES"/>
+        <org.eventb.core.poIdentifier name="obs" org.eventb.core.type="PROPERTIES"/>
+        <org.eventb.core.poIdentifier name="Output'" org.eventb.core.type="ℙ(ℙ(DEVICE×ℙ(PROPERTIES×PROPERTIES))×DEVICE)"/>
+        <org.eventb.core.poIdentifier name="t" org.eventb.core.type="DEVICE"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPfeatureOfInteresy" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#EVTIDENTfeatureOfInteresy" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="obs∈obsProperty∧foi∈featureOfInterest" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#K|org.eventb.core.guard#+"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="t∈Time" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#K|org.eventb.core.guard#,"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="data∈sensingData" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#K|org.eventb.core.guard#-"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="sensingFlag=TRUE" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#K|org.eventb.core.guard#."/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="Context={obs ↦ foi}" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.event#K|org.eventb.core.guard#\/"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dp.bpo|org.eventb.core.poFile#m0_dp|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Identity⊆PROPERTIES" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="deviceId∈DEVICE → Identity" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="deviceType∈ℙ(DEVICE)" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#M"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="Platform⊆SYSTEM" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#."/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="hosting∈DEVICE → Platform" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="Input⊆USER" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#3"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="Stimulus⊆USER" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#5"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="Trigger∈Input ↔ DEVICE∨Trigger∈Stimulus ↔ DEVICE" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#7"/>
+        <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="Action⊆PROPERTIES" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="Event∈DEVICE ↔ Action" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#;"/>
+        <org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="sensingFlag∈BOOL" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#&gt;"/>
+        <org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="sensingData⊆DEVICE∧Time⊆DEVICE" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#@"/>
+        <org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="obsProperty⊆PROPERTIES∧featureOfInterest⊆PROPERTIES" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="Context∈obsProperty ↔ featureOfInterest" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="Output∈(sensingData ↔ (obsProperty ↔ featureOfInterest)) ↔ Time" org.eventb.core.source="/IOT_MS2/m0_dp.bum|org.eventb.core.machineFile#m0_dp|org.eventb.core.invariant#H"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

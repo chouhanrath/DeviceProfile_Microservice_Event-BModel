@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="Broker ≔ ∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="Partition ≔ ∅" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="StreamProcessor ≔ ∅" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="Database ≔ ∅" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="inputStream ≔ ∅" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="outputStream ≔ ∅" org.eventb.core.label="act6"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="Connector ≔ ∅" org.eventb.core.label="act7"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="pushMsg ≔ ∅" org.eventb.core.label="act8"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="pullMsg ≔ ∅" org.eventb.core.label="act9"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="Time ≔ 1" org.eventb.core.label="act10"/>
+        <org.eventb.core.action name="1" org.eventb.core.assignment="topicOfInterest ≔ ∅" org.eventb.core.label="act11"/>
+        <org.eventb.core.action name="2" org.eventb.core.assignment="Aggregator ≔ ∅" org.eventb.core.label="act12"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="c0_dd"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="Broker"/>
+    <org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="Broker ⊆ CLUSTER "/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="Partition"/>
+    <org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="Partition ⊆ CLUSTER"/>
+    <org.eventb.core.variable name="-" org.eventb.core.identifier="StreamProcessor"/>
+    <org.eventb.core.invariant name="." org.eventb.core.label="inv3" org.eventb.core.predicate="StreamProcessor ⊆ PROCESSOR "/>
+    <org.eventb.core.variable name="/" org.eventb.core.identifier="Database"/>
+    <org.eventb.core.invariant name="0" org.eventb.core.label="inv4" org.eventb.core.predicate="Database ⊆ PROCESSOR "/>
+    <org.eventb.core.variable name="1" org.eventb.core.identifier="inputStream"/>
+    <org.eventb.core.variable name="3" org.eventb.core.identifier="outputStream"/>
+    <org.eventb.core.variable name="5" org.eventb.core.identifier="Connector"/>
+    <org.eventb.core.variable name="7" org.eventb.core.identifier="pushMsg"/>
+    <org.eventb.core.variable name="9" org.eventb.core.identifier="pullMsg"/>
+    <org.eventb.core.refinesMachine name=";" org.eventb.core.target="m0_dd"/>
+    <org.eventb.core.event name="=" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="publish_data">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="send_msg"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="br"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd4" org.eventb.core.predicate="br ∈ Broker"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="pushMsg ≔ {prod ↦ br}" org.eventb.core.label="act5"/>
+        <org.eventb.core.parameter name="+" org.eventb.core.identifier="sp"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd5" org.eventb.core.predicate="sp ∈ StreamProcessor"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="inputStream ≔ {{prod ↦ sp}}" org.eventb.core.label="act6"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="subscribe_data">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="receive_msg"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="br"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd4" org.eventb.core.predicate="br ∈ Broker"/>
+        <org.eventb.core.parameter name="*" org.eventb.core.identifier="sp"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd5" org.eventb.core.predicate="sp ∈ StreamProcessor"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="pullMsg ≔ {br ↦ cons}" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="outputStream ≔ {{{sp↦aggr} ↦ cons}}" org.eventb.core.label="act4"/>
+        <org.eventb.core.parameter name="." org.eventb.core.identifier="aggr"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd6" org.eventb.core.predicate="aggr ∈ Aggregator"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="?" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="subscribe_topic">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="subscribe_topic"/>
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="cons"/>
+        <org.eventb.core.parameter name="internal1" org.eventb.core.identifier="top"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="cons ∈ CONSUMER"/>
+        <org.eventb.core.guard name="internal1" org.eventb.core.label="grd2" org.eventb.core.predicate="top ∈ TOPIC"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="topicOfInterest(Time)≔topicOfInterest(Time) ∪ {top ↦ cons}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="@" org.eventb.core.identifier="Time"/>
+    <org.eventb.core.variable name="C" org.eventb.core.identifier="topicOfInterest"/>
+    <org.eventb.core.event name="D" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="unsubscribe_topic">
+        <org.eventb.core.refinesEvent name="," org.eventb.core.target="unsubscribe_topic"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="E" org.eventb.core.identifier="Aggregator"/>
+    <org.eventb.core.invariant name="F" org.eventb.core.label="inv12" org.eventb.core.predicate="Aggregator ⊆ PROCESSOR"/>
+    <org.eventb.core.invariant name="2" org.eventb.core.label="inv5" org.eventb.core.predicate="inputStream ⊆ PRODUCER → StreamProcessor"/>
+    <org.eventb.core.invariant name="4" org.eventb.core.label="inv6" org.eventb.core.predicate="outputStream ⊆ (StreamProcessor→Aggregator) → CONSUMER "/>
+    <org.eventb.core.invariant name="6" org.eventb.core.label="inv7" org.eventb.core.predicate="Connector ⊆ Database ↔ (PRODUCER × CONSUMER)"/>
+    <org.eventb.core.invariant name="8" org.eventb.core.label="inv8" org.eventb.core.predicate="pushMsg ∈ PRODUCER ↔ Broker"/>
+    <org.eventb.core.invariant name=":" org.eventb.core.label="inv9" org.eventb.core.predicate="pullMsg ∈ Broker ↔ CONSUMER"/>
+    <org.eventb.core.invariant name="A" org.eventb.core.label="inv10" org.eventb.core.predicate="Time ∈ ℕ1"/>
+    <org.eventb.core.invariant name="B" org.eventb.core.label="inv11" org.eventb.core.predicate="topicOfInterest ∈ (1 ‥ Time) → (TOPIC↔CONSUMER)"/>
+</org.eventb.core.machineFile>

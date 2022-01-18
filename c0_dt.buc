@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+    <org.eventb.core.carrierSet name="'" org.eventb.core.comment="set of microservices" org.eventb.core.identifier="MS"/>
+    <org.eventb.core.carrierSet name="-" org.eventb.core.comment="set of devices" org.eventb.core.identifier="D"/>
+    <org.eventb.core.carrierSet name="8" org.eventb.core.comment="set of actions" org.eventb.core.identifier="ACTIONS"/>
+    <org.eventb.core.carrierSet name="=" org.eventb.core.comment="set of device templates" org.eventb.core.identifier="TEMPLATE"/>
+    <org.eventb.core.carrierSet name="&gt;" org.eventb.core.identifier="REGISTRY"/>
+    <org.eventb.core.carrierSet name="?" org.eventb.core.identifier="PROTOCOL"/>
+    <org.eventb.core.carrierSet name="@" org.eventb.core.identifier="DATAFORMAT"/>
+</org.eventb.core.contextFile>

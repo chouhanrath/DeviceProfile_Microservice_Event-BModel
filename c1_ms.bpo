@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Condition" org.eventb.core.type="ℙ(Condition)"/>
+        <org.eventb.core.poIdentifier name="SchedulingOrder" org.eventb.core.type="ℙ(SchedulingOrder)"/>
+        <org.eventb.core.poIdentifier name="ExecutionPattern" org.eventb.core.type="ℙ(ExecutionPattern)"/>
+        <org.eventb.core.poIdentifier name="Queue" org.eventb.core.type="ℙ(Queue)"/>
+        <org.eventb.core.poIdentifier name="parallel" org.eventb.core.type="ExecutionPattern"/>
+        <org.eventb.core.poIdentifier name="series" org.eventb.core.type="ExecutionPattern"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/IOT_MS2/c1_ms.bpo|org.eventb.core.poFile#c1_ms|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(ExecutionPattern,{series},{parallel})" org.eventb.core.source="/IOT_MS2/c1_ms.buc|org.eventb.core.contextFile#c1_ms|org.eventb.core.axiom#*"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

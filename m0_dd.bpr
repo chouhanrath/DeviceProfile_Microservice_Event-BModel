@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MESSAGE,TOPIC">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(MESSAGE×TOPIC))∈(∅ ⦂ ℙ(MESSAGE)) → (∅ ⦂ ℙ(TOPIC))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MESSAGE,PUBLISHER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(MESSAGE×PUBLISHER))∈(∅ ⦂ ℙ(MESSAGE)) → (∅ ⦂ ℙ(PUBLISHER))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MESSAGE,SUBSCRIBER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(SUBSCRIBER×ℙ(MESSAGE)))∈(∅ ⦂ ℙ(SUBSCRIBER)) → ℙ(∅ ⦂ ℙ(MESSAGE))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MESSAGE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(MESSAGE×ℤ))∈(∅ ⦂ ℙ(MESSAGE)) → 1 ‥ 1"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="1∈ℕ1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv10/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="SUBSCRIBER,TOPIC">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×ℙ(TOPIC×SUBSCRIBER)))∈1 ‥ 1 → {∅ ⦂ ℙ(TOPIC×SUBSCRIBER)}"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×ℙ(TOPIC×SUBSCRIBER)))∈1 ‥ 1 → ((∅ ⦂ ℙ(TOPIC)) ↔ (∅ ⦂ ℙ(SUBSCRIBER)))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="subscribe_topic/inv10/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="sub⊆SUBSCRIBER">
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="top⊆TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="ℙ(TOPIC)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="msg⊆MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="pub⊆PUBLISHER">
+            <org.eventb.core.prIdent name="PUBLISHER" org.eventb.core.type="ℙ(PUBLISHER)"/>
+            <org.eventb.core.prIdent name="pub" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="subscribe_topic/act1/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="CONSUMER,TOPIC">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5"/>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p1"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="topicOfInterest" org.eventb.core.type="ℙ(ℤ×ℙ(TOPIC×CONSUMER))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="topicOfInterest∈ℤ ⇸ ℙ(TOPIC × CONSUMER)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="top∈TOPIC">
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="cons∈CONSUMER">
+            <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Time∈dom(topicOfInterest)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="topicOfInterest∈1 ‥ Time → (TOPIC ↔ CONSUMER)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Time∈dom(topicOfInterest)∧topicOfInterest∈ℤ ⇸ ℙ(TOPIC × CONSUMER)"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="CONSUMER,TOPIC">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5"/>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p1"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="topicOfInterest" org.eventb.core.type="ℙ(ℤ×ℙ(TOPIC×CONSUMER))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="topicOfInterest∈ℤ ⇸ ℙ(TOPIC × CONSUMER)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="top∈TOPIC">
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="cons∈CONSUMER">
+            <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Time∈dom(topicOfInterest)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="topicOfInterest∈1 ‥ Time → (TOPIC ↔ CONSUMER)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Time∈dom(topicOfInterest)∧topicOfInterest∈ℤ ⇸ ℙ(TOPIC × CONSUMER)"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/inv10/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="sub⊆SUBSCRIBER">
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="top⊆TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="ℙ(TOPIC)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="msg⊆MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="pub⊆PUBLISHER">
+            <org.eventb.core.prIdent name="PUBLISHER" org.eventb.core.type="ℙ(PUBLISHER)"/>
+            <org.eventb.core.prIdent name="pub" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="CONSUMER,TOPIC">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="topicOfInterest" org.eventb.core.type="ℙ(ℤ×ℙ(TOPIC×CONSUMER))"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="topicOfInterest∈ℤ ⇸ ℙ(TOPIC × CONSUMER)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Time∈dom(topicOfInterest)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Time∈dom(topicOfInterest)∧topicOfInterest∈ℤ ⇸ ℙ(TOPIC × CONSUMER)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/inv8/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="sub⊆SUBSCRIBER">
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="top⊆TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="ℙ(TOPIC)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="msg⊆MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="pub⊆PUBLISHER">
+            <org.eventb.core.prIdent name="PUBLISHER" org.eventb.core.type="ℙ(PUBLISHER)"/>
+            <org.eventb.core.prIdent name="pub" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/inv9/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="sub⊆SUBSCRIBER">
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="top⊆TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="ℙ(TOPIC)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="msg⊆MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="pub⊆PUBLISHER">
+            <org.eventb.core.prIdent name="PUBLISHER" org.eventb.core.type="ℙ(PUBLISHER)"/>
+            <org.eventb.core.prIdent name="pub" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="send_msg/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="top∈TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="msg∈MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="MESSAGE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="prod∈PRODUCER">
+            <org.eventb.core.prIdent name="PRODUCER" org.eventb.core.type="ℙ(PRODUCER)"/>
+            <org.eventb.core.prIdent name="prod" org.eventb.core.type="PRODUCER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="send_msg/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="sub⊆SUBSCRIBER">
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="top⊆TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="ℙ(TOPIC)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬a_msg∈msg">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="a_msg" org.eventb.core.type="MESSAGE"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="a_msg∉msg">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="a_msg" org.eventb.core.type="MESSAGE"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="msg⊆MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="pub⊆PUBLISHER">
+            <org.eventb.core.prIdent name="PUBLISHER" org.eventb.core.type="ℙ(PUBLISHER)"/>
+            <org.eventb.core.prIdent name="pub" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="send_msg/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="sub⊆SUBSCRIBER">
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="top⊆TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="ℙ(TOPIC)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬a_msg∈msg">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="a_msg" org.eventb.core.type="MESSAGE"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="a_msg∉msg">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="a_msg" org.eventb.core.type="MESSAGE"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="msg⊆MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="pub⊆PUBLISHER">
+            <org.eventb.core.prIdent name="PUBLISHER" org.eventb.core.type="ℙ(PUBLISHER)"/>
+            <org.eventb.core.prIdent name="pub" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="send_msg/inv9/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="sub⊆SUBSCRIBER">
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="top⊆TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="ℙ(TOPIC)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬a_msg∈msg">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="a_msg" org.eventb.core.type="MESSAGE"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="a_msg∉msg">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="a_msg" org.eventb.core.type="MESSAGE"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="msg⊆MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="pub⊆PUBLISHER">
+            <org.eventb.core.prIdent name="PUBLISHER" org.eventb.core.type="ℙ(PUBLISHER)"/>
+            <org.eventb.core.prIdent name="pub" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv11/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="MESSAGE,SUBSCRIBER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(MESSAGE×SUBSCRIBER))∈(∅ ⦂ ℙ(MESSAGE)) ↔ (∅ ⦂ ℙ(SUBSCRIBER))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="send_msg/inv11/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="sub⊆SUBSCRIBER">
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="top⊆TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="ℙ(TOPIC)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬a_msg∈msg">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="a_msg" org.eventb.core.type="MESSAGE"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="a_msg∉msg">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="a_msg" org.eventb.core.type="MESSAGE"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="msg⊆MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="pub⊆PUBLISHER">
+            <org.eventb.core.prIdent name="PUBLISHER" org.eventb.core.type="ℙ(PUBLISHER)"/>
+            <org.eventb.core.prIdent name="pub" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="receive_msg/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="CONSUMER,MESSAGE,TOPIC">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p2">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                    <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p9">
+                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p2"/>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p10"/>
+                            <org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p11">
+                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="p1"/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="msg" org.eventb.core.type="MESSAGE"/>
+        <org.eventb.core.prIdent name="topicMsg" org.eventb.core.type="ℙ(MESSAGE×TOPIC)"/>
+        <org.eventb.core.prIdent name="topicOfInterest" org.eventb.core.type="ℙ(ℤ×ℙ(TOPIC×CONSUMER))"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="topicOfInterest∈ℤ ⇸ ℙ(TOPIC × CONSUMER)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="cons∈CONSUMER">
+            <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Time∈dom(topicOfInterest)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="msg∈MESSAGE"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="topicOfInterest∈1 ‥ Time → (TOPIC ↔ CONSUMER)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="topicMsg∈MESSAGE → TOPIC"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="topicMsg∈MESSAGE ⇸ TOPIC"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="cons∈CONSUMER∧msg∈MESSAGE">
+            <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="msg∈dom(topicMsg)∧topicMsg∈MESSAGE ⇸ TOPIC∧Time∈dom(topicOfInterest)∧topicOfInterest∈ℤ ⇸ ℙ(TOPIC × CONSUMER)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="msg∈dom(topicMsg)"/>
+        <org.eventb.core.prExpr name="e0" org.eventb.core.expression="MESSAGE"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="receive_msg/inv11/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="sub⊆SUBSCRIBER">
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="a_sub∈sub">
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="a_sub" org.eventb.core.type="SUBSCRIBER"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="top⊆TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="ℙ(TOPIC)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="a_msg∈msg">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="a_msg" org.eventb.core.type="MESSAGE"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="msg⊆MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="pub⊆PUBLISHER">
+            <org.eventb.core.prIdent name="PUBLISHER" org.eventb.core.type="ℙ(PUBLISHER)"/>
+            <org.eventb.core.prIdent name="pub" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="a_sub∈sub∧a_msg∈msg">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="a_msg" org.eventb.core.type="MESSAGE"/>
+            <org.eventb.core.prIdent name="a_sub" org.eventb.core.type="SUBSCRIBER"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="receive_msg/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="sub⊆SUBSCRIBER">
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="a_sub∈sub">
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="a_sub" org.eventb.core.type="SUBSCRIBER"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="top⊆TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="ℙ(TOPIC)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="a_msg∈msg">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="a_msg" org.eventb.core.type="MESSAGE"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="msg⊆MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="pub⊆PUBLISHER">
+            <org.eventb.core.prIdent name="PUBLISHER" org.eventb.core.type="ℙ(PUBLISHER)"/>
+            <org.eventb.core.prIdent name="pub" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="a_sub∈sub∧a_msg∈msg">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="SUBSCRIBER" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+            <org.eventb.core.prIdent name="a_msg" org.eventb.core.type="MESSAGE"/>
+            <org.eventb.core.prIdent name="a_sub" org.eventb.core.type="SUBSCRIBER"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="sub" org.eventb.core.type="ℙ(SUBSCRIBER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="receive_msg/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="CONSUMER,MESSAGE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p1">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                    <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p8">
+                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p1"/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        <org.eventb.core.prIdent name="subscriberMsg" org.eventb.core.type="ℙ(CONSUMER×ℙ(MESSAGE))"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="subscriberMsg∈CONSUMER ⇸ ℙ(MESSAGE)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="subscriberMsg∈CONSUMER → ℙ(MESSAGE)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="cons∈CONSUMER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="msg∈MESSAGE">
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="MESSAGE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="cons∈dom(subscriberMsg)∧subscriberMsg∈CONSUMER ⇸ ℙ(MESSAGE)"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="cons∈dom(subscriberMsg)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="cons∈CONSUMER∧msg∈MESSAGE">
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="MESSAGE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prExpr name="e0" org.eventb.core.expression="CONSUMER"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv1/INV"/>
+    <org.eventb.core.prProof name="INITIALISATION/inv2/INV"/>
+    <org.eventb.core.prProof name="INITIALISATION/inv3/INV"/>
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="1∈ℕ1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="subscribe_topic/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="top∈TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="cons∈CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="top∈TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="cons∈CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="top∈TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="cons∈CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="top∈TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="cons∈CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="send_msg/inv1/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="top∈TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="msg∈MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="MESSAGE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="prod∈PRODUCER">
+            <org.eventb.core.prIdent name="PRODUCER" org.eventb.core.type="ℙ(PRODUCER)"/>
+            <org.eventb.core.prIdent name="prod" org.eventb.core.type="PRODUCER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="send_msg/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="top∈TOPIC">
+            <org.eventb.core.prIdent name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="msg∈MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="MESSAGE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="prod∈PRODUCER">
+            <org.eventb.core.prIdent name="PRODUCER" org.eventb.core.type="ℙ(PRODUCER)"/>
+            <org.eventb.core.prIdent name="prod" org.eventb.core.type="PRODUCER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="receive_msg/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="cons∈CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="msg∈MESSAGE">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="MESSAGE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="cons∈CONSUMER∧msg∈MESSAGE">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+            <org.eventb.core.prIdent name="msg" org.eventb.core.type="MESSAGE"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+        <org.eventb.core.poIdentifier name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        <org.eventb.core.poIdentifier name="TOPIC" org.eventb.core.type="ℙ(TOPIC)"/>
+        <org.eventb.core.poIdentifier name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+        <org.eventb.core.poIdentifier name="PRODUCER" org.eventb.core.type="ℙ(PRODUCER)"/>
+        <org.eventb.core.poIdentifier name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="sessionTime" org.eventb.core.type="ℙ(MESSAGE×ℤ)"/>
+        <org.eventb.core.poIdentifier name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        <org.eventb.core.poIdentifier name="Connector" org.eventb.core.type="ℙ(ℙ(PROCESSOR×(PRODUCER×CONSUMER)))"/>
+        <org.eventb.core.poIdentifier name="pushMsg" org.eventb.core.type="ℙ(PRODUCER×CLUSTER)"/>
+        <org.eventb.core.poIdentifier name="topicMsg" org.eventb.core.type="ℙ(MESSAGE×TOPIC)"/>
+        <org.eventb.core.poIdentifier name="publisherMsg" org.eventb.core.type="ℙ(MESSAGE×PRODUCER)"/>
+        <org.eventb.core.poIdentifier name="StreamProcessor" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        <org.eventb.core.poIdentifier name="Database" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        <org.eventb.core.poIdentifier name="topicOfInterest" org.eventb.core.type="ℙ(ℤ×ℙ(TOPIC×CONSUMER))"/>
+        <org.eventb.core.poIdentifier name="subscriberMsg" org.eventb.core.type="ℙ(CONSUMER×ℙ(MESSAGE))"/>
+        <org.eventb.core.poIdentifier name="pullMsg" org.eventb.core.type="ℙ(CLUSTER×CONSUMER)"/>
+        <org.eventb.core.poIdentifier name="Broker" org.eventb.core.type="ℙ(CLUSTER)"/>
+        <org.eventb.core.poIdentifier name="Aggregator" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        <org.eventb.core.poIdentifier name="inputStream" org.eventb.core.type="ℙ(ℙ(PRODUCER×PROCESSOR))"/>
+        <org.eventb.core.poIdentifier name="Time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Partition" org.eventb.core.type="ℙ(CLUSTER)"/>
+        <org.eventb.core.poIdentifier name="outputStream" org.eventb.core.type="ℙ(ℙ(ℙ(PROCESSOR×PROCESSOR)×CONSUMER))"/>
+        <org.eventb.core.poPredicate name="topicOfInteresu" org.eventb.core.predicate="topicMsg∈MESSAGE → TOPIC" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poPredicate name="topicOfInteresv" org.eventb.core.predicate="publisherMsg∈MESSAGE → PRODUCER" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poPredicate name="topicOfInteresw" org.eventb.core.predicate="subscriberMsg∈CONSUMER → ℙ(MESSAGE)" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.invariant#6"/>
+        <org.eventb.core.poPredicate name="topicOfInteresx" org.eventb.core.predicate="Time∈ℕ1" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.invariant#9"/>
+        <org.eventb.core.poPredicate name="topicOfInteresy" org.eventb.core.predicate="sessionTime∈MESSAGE → 1 ‥ Time" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poPredicate name="topicOfInteresz" org.eventb.core.predicate="topicOfInterest∈1 ‥ Time → (TOPIC ↔ CONSUMER)" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.invariant#="/>
+        <org.eventb.core.poPredicate name="topicOfInteres{" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.invariant#B"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTALLHYPtopicOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(PRODUCER×PROCESSOR)))⊆PRODUCER → (∅ ⦂ ℙ(PROCESSOR))" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTALLHYPtopicOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(ℙ(PROCESSOR×PROCESSOR)×CONSUMER)))⊆((∅ ⦂ ℙ(PROCESSOR)) → (∅ ⦂ ℙ(PROCESSOR))) → CONSUMER" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTALLHYPtopicOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(PROCESSOR×(PRODUCER×CONSUMER))))⊆(∅ ⦂ ℙ(PROCESSOR)) ↔ PRODUCER × CONSUMER" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#6"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#6"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTALLHYPtopicOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(PRODUCER×CLUSTER))∈PRODUCER ↔ (∅ ⦂ ℙ(CLUSTER))" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poSequent#INITIALISATION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD8"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTALLHYPtopicOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(CLUSTER×CONSUMER))∈(∅ ⦂ ℙ(CLUSTER)) ↔ CONSUMER" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poSequent#INITIALISATION\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD9"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTALLHYPtopicOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈ℕ1" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poSequent#INITIALISATION\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD10"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTALLHYPtopicOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×ℙ(TOPIC×CONSUMER)))∈1 ‥ 1 → (TOPIC ↔ CONSUMER)" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poSequent#INITIALISATION\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/act4/SIM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Action simulation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTALLHYPtopicOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1=1" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'|org.eventb.core.action#\/"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'|org.eventb.core.action#\/"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poSequent#INITIALISATION\/act4\/SIM|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/act6/SIM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Action simulation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTALLHYPtopicOfInteresu"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×ℙ(TOPIC×CONSUMER)))=(∅ ⦂ ℙ(ℤ×ℙ(TOPIC×CONSUMER)))" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'|org.eventb.core.action#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#'|org.eventb.core.action#0"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#'"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poSequent#INITIALISATION\/act6\/SIM|org.eventb.core.poPredicateSet#SEQHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtopicOfInteresu" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="sessionTime'" org.eventb.core.type="ℙ(MESSAGE×ℤ)"/>
+        <org.eventb.core.poIdentifier name="Partition'" org.eventb.core.type="ℙ(CLUSTER)"/>
+        <org.eventb.core.poIdentifier name="Connector'" org.eventb.core.type="ℙ(ℙ(PROCESSOR×(PRODUCER×CONSUMER)))"/>
+        <org.eventb.core.poIdentifier name="Aggregator'" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        <org.eventb.core.poIdentifier name="subscriberMsg'" org.eventb.core.type="ℙ(CONSUMER×ℙ(MESSAGE))"/>
+        <org.eventb.core.poIdentifier name="msgQueue'" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        <org.eventb.core.poIdentifier name="outputStream'" org.eventb.core.type="ℙ(ℙ(ℙ(PROCESSOR×PROCESSOR)×CONSUMER))"/>
+        <org.eventb.core.poIdentifier name="pullMsg'" org.eventb.core.type="ℙ(CLUSTER×CONSUMER)"/>
+        <org.eventb.core.poIdentifier name="inputStream'" org.eventb.core.type="ℙ(ℙ(PRODUCER×PROCESSOR))"/>
+        <org.eventb.core.poIdentifier name="Time'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="pushMsg'" org.eventb.core.type="ℙ(PRODUCER×CLUSTER)"/>
+        <org.eventb.core.poIdentifier name="publisherMsg'" org.eventb.core.type="ℙ(MESSAGE×PRODUCER)"/>
+        <org.eventb.core.poIdentifier name="Database'" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        <org.eventb.core.poIdentifier name="topicOfInterest'" org.eventb.core.type="ℙ(ℤ×ℙ(TOPIC×CONSUMER))"/>
+        <org.eventb.core.poIdentifier name="StreamProcessor'" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        <org.eventb.core.poIdentifier name="Broker'" org.eventb.core.type="ℙ(CLUSTER)"/>
+        <org.eventb.core.poIdentifier name="topicMsg'" org.eventb.core.type="ℙ(MESSAGE×TOPIC)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtopicOfInteresu" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTIDENTtopicOfInteresu" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poSequent name="subscribe_topic/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTALLHYPtopicOfInteresv"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="topicOfInterest{Time ↦ topicOfInterest(Time)∪{top ↦ cons}}∈1 ‥ Time → (TOPIC ↔ CONSUMER)" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#&gt;"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#?"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poSequent#subscribe_topic\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtopicOfInteresv" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="cons" org.eventb.core.type="CONSUMER"/>
+        <org.eventb.core.poIdentifier name="topicOfInterest'" org.eventb.core.type="ℙ(ℤ×ℙ(TOPIC×CONSUMER))"/>
+        <org.eventb.core.poIdentifier name="top" org.eventb.core.type="TOPIC"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtopicOfInteresv" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTIDENTtopicOfInteresv" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="cons∈CONSUMER" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#?|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="top∈TOPIC" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#?|org.eventb.core.guard#internal1"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="unsubscribe_topic/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTALLHYPtopicOfInteresw"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Time+1∈ℕ1" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#?"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#D"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poSequent#unsubscribe_topic\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD10"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="unsubscribe_topic/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTALLHYPtopicOfInteresw"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="topicOfInterest∪{Time ↦ topicOfInterest(Time) ∖ {top ↦ cons}}∈1 ‥ Time+1 → (TOPIC ↔ CONSUMER)" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#?"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.event#D"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#B"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poSequent#unsubscribe_topic\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTtopicOfInteresw" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Time'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="cons" org.eventb.core.type="CONSUMER"/>
+        <org.eventb.core.poIdentifier name="topicOfInterest'" org.eventb.core.type="ℙ(ℤ×ℙ(TOPIC×CONSUMER))"/>
+        <org.eventb.core.poIdentifier name="top" org.eventb.core.type="TOPIC"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPtopicOfInteresw" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#EVTIDENTtopicOfInteresw" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="cons∈CONSUMER" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#?|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="top∈TOPIC" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#?|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="top ↦ cons∈topicOfInterest(Time)" org.eventb.core.source="/IOT_MS2/m0_dd.bum|org.eventb.core.machineFile#m0_dd|org.eventb.core.event#?|org.eventb.core.guard#+"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/IOT_MS2/m1_dd.bpo|org.eventb.core.poFile#m1_dd|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Broker⊆CLUSTER" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#*"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Partition⊆CLUSTER" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="StreamProcessor⊆PROCESSOR" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#."/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="Database⊆PROCESSOR" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="Aggregator⊆PROCESSOR" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#F"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="inputStream⊆PRODUCER → StreamProcessor" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="outputStream⊆(StreamProcessor → Aggregator) → CONSUMER" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="Connector⊆Database ↔ PRODUCER × CONSUMER" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#6"/>
+        <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="pushMsg∈PRODUCER ↔ Broker" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="pullMsg∈Broker ↔ CONSUMER" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#:"/>
+        <org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="Time∈ℕ1" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="topicOfInterest∈1 ‥ Time → (TOPIC ↔ CONSUMER)" org.eventb.core.source="/IOT_MS2/m1_dd.bum|org.eventb.core.machineFile#m1_dd|org.eventb.core.invariant#B"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scCarrierSet name="MESSAGE" org.eventb.core.source="/IOT_MS2/c0_dd.buc|org.eventb.core.contextFile#c0_dd|org.eventb.core.carrierSet#)" org.eventb.core.type="ℙ(MESSAGE)"/>
+    <org.eventb.core.scCarrierSet name="PROCESSOR" org.eventb.core.source="/IOT_MS2/c0_dd.buc|org.eventb.core.contextFile#c0_dd|org.eventb.core.carrierSet#," org.eventb.core.type="ℙ(PROCESSOR)"/>
+    <org.eventb.core.scCarrierSet name="TOPIC" org.eventb.core.source="/IOT_MS2/c0_dd.buc|org.eventb.core.contextFile#c0_dd|org.eventb.core.carrierSet#*" org.eventb.core.type="ℙ(TOPIC)"/>
+    <org.eventb.core.scCarrierSet name="CLUSTER" org.eventb.core.source="/IOT_MS2/c0_dd.buc|org.eventb.core.contextFile#c0_dd|org.eventb.core.carrierSet#+" org.eventb.core.type="ℙ(CLUSTER)"/>
+    <org.eventb.core.scCarrierSet name="PRODUCER" org.eventb.core.source="/IOT_MS2/c0_dd.buc|org.eventb.core.contextFile#c0_dd|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(PRODUCER)"/>
+    <org.eventb.core.scCarrierSet name="CONSUMER" org.eventb.core.source="/IOT_MS2/c0_dd.buc|org.eventb.core.contextFile#c0_dd|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(CONSUMER)"/>
+</org.eventb.core.scContextFile>

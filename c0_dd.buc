@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+    <org.eventb.core.carrierSet name="'" org.eventb.core.comment="set of producer" org.eventb.core.identifier="PRODUCER"/>
+    <org.eventb.core.carrierSet name="(" org.eventb.core.comment="set of consumer" org.eventb.core.identifier="CONSUMER"/>
+    <org.eventb.core.carrierSet name=")" org.eventb.core.comment="set of messages" org.eventb.core.identifier="MESSAGE"/>
+    <org.eventb.core.carrierSet name="*" org.eventb.core.comment="set of topics" org.eventb.core.identifier="TOPIC"/>
+    <org.eventb.core.carrierSet name="+" org.eventb.core.identifier="CLUSTER"/>
+    <org.eventb.core.carrierSet name="," org.eventb.core.identifier="PROCESSOR"/>
+</org.eventb.core.contextFile>

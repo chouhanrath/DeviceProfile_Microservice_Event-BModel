@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+    <org.eventb.core.carrierSet name="'" org.eventb.core.identifier="DEVICE"/>
+    <org.eventb.core.carrierSet name="-" org.eventb.core.comment="set of physical properties" org.eventb.core.identifier="PROPERTIES"/>
+    <org.eventb.core.carrierSet name="." org.eventb.core.identifier="SYSTEM"/>
+    <org.eventb.core.carrierSet name="/" org.eventb.core.identifier="USER"/>
+    <org.eventb.core.constant name="0" org.eventb.core.identifier="Sensor"/>
+    <org.eventb.core.constant name="1" org.eventb.core.identifier="Actuator"/>
+    <org.eventb.core.constant name="2" org.eventb.core.identifier="EmbeddedDevice"/>
+    <org.eventb.core.axiom name="3" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(DEVICE, {Sensor}, {Actuator}, {EmbeddedDevice}) "/>
+</org.eventb.core.contextFile>

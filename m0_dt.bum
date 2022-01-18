@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="microservices ≔ ∅ " org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="devices ≔ ∅" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="DevRegistration ≔ ∅" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="msRegistry ≔ ∅" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="msRegistration ≔ ∅" org.eventb.core.label="act6"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="devRegistry ≔ ∅" org.eventb.core.label="act7"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="buildMicroservice≔∅" org.eventb.core.label="act8"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="(" org.eventb.core.identifier="microservices"/>
+    <org.eventb.core.invariant name=")" org.eventb.core.label="inv1" org.eventb.core.predicate="microservices ⊆ MS"/>
+    <org.eventb.core.seesContext name="*" org.eventb.core.target="c0_dt"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="devices"/>
+    <org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="devices ∈ microservices → ℙ(D)"/>
+    <org.eventb.core.variable name="9" org.eventb.core.identifier="DevRegistration"/>
+    <org.eventb.core.variable name=";" org.eventb.core.identifier="msRegistry"/>
+    <org.eventb.core.variable name="&gt;" org.eventb.core.identifier="msRegistration"/>
+    <org.eventb.core.variable name="@" org.eventb.core.identifier="devRegistry"/>
+    <org.eventb.core.invariant name="A" org.eventb.core.label="inv3" org.eventb.core.predicate="buildMicroservice ⊆ TEMPLATE × PROTOCOL × DATAFORMAT"/>
+    <org.eventb.core.variable name="B" org.eventb.core.identifier="buildMicroservice"/>
+    <org.eventb.core.invariant name="=" org.eventb.core.label="inv5" org.eventb.core.predicate="(msRegistry ⊆ REGISTRY) ∧ (devRegistry ⊆ REGISTRY)"/>
+    <org.eventb.core.invariant name="8" org.eventb.core.label="inv6" org.eventb.core.predicate="DevRegistration ∈ ((ℙ(D) ↔ TEMPLATE) → devRegistry) "/>
+    <org.eventb.core.invariant name="?" org.eventb.core.label="inv7" org.eventb.core.predicate="msRegistration ∈ microservices → msRegistry"/>
+    <org.eventb.core.event name="C" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="build_microservice">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="template"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="protocol"/>
+        <org.eventb.core.parameter name="+" org.eventb.core.identifier="dataFormat"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd1" org.eventb.core.predicate="template ∈ TEMPLATE"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="buildMicroservice ≔ {template ↦ protocol ↦ dataFormat}" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd3" org.eventb.core.predicate="protocol ∈ PROTOCOL"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd5" org.eventb.core.predicate="dataFormat ∈ DATAFORMAT"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="registration">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="a_service"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="a_service ∈ MS ∖ microservices"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="microservices ≔ microservices ∪ {a_service}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="devices(a_service)≔∅" org.eventb.core.label="act2"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="registry ∈ msRegistry"/>
+        <org.eventb.core.parameter name="," org.eventb.core.identifier="registry"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="msRegistration ≔ msRegistration ∪ {a_service ↦ registry}" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="deregistration">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="a_service"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="a_service ∈ microservices"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="devices ≔ {a_service} ⩤ devices" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="microservices ≔ microservices ∖ {a_service}" org.eventb.core.label="act2"/>
+        <org.eventb.core.parameter name="+" org.eventb.core.identifier="registry"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="registry ∈ msRegistry"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="msRegistration ≔ msRegistration ∖ {a_service ↦ registry}" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="add_device">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="a_service"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="a_device"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="a_service ∈ microservices"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="a_device ∈ D"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="a_device ∈ D ∖ union(ran(devices))"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="devices(a_service)≔devices(a_service) ∪ {a_device}" org.eventb.core.label="act1"/>
+        <org.eventb.core.parameter name="-" org.eventb.core.identifier="template"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd4" org.eventb.core.predicate="template ∈ TEMPLATE"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="DevRegistration ≔ DevRegistration ∪ {{{a_device} ↦ template}↦registry}" org.eventb.core.label="act2"/>
+        <org.eventb.core.parameter name="0" org.eventb.core.identifier="registry"/>
+        <org.eventb.core.guard name="1" org.eventb.core.label="grd5" org.eventb.core.predicate="registry ∈ devRegistry"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="remove_device">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="a_service"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="a_device"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="devices(a_service) ≔ devices(a_service)∖{a_device}" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd1" org.eventb.core.predicate="a_device ∈ D"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="a_service ∈ microservices"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="a_device ∈ devices(a_service)"/>
+        <org.eventb.core.parameter name="-" org.eventb.core.identifier="template"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd4" org.eventb.core.predicate="template ∈ TEMPLATE"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="DevRegistration ≔ DevRegistration ∖ {{{a_device} ↦ template}↦registry}" org.eventb.core.label="act2"/>
+        <org.eventb.core.parameter name="0" org.eventb.core.identifier="registry"/>
+        <org.eventb.core.guard name="1" org.eventb.core.label="grd5" org.eventb.core.predicate="registry ∈ devRegistry"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name=":" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="replace_device">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="device1"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="device2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="(device1 ∈ D) ∧ (device2 ∈ D)"/>
+        <org.eventb.core.parameter name="*" org.eventb.core.identifier="template"/>
+        <org.eventb.core.parameter name="." org.eventb.core.identifier="service1"/>
+        <org.eventb.core.parameter name="/" org.eventb.core.identifier="service2"/>
+        <org.eventb.core.guard name="0" org.eventb.core.label="grd2" org.eventb.core.predicate="(service1 ∈ microservices) ∧ (service2 ∈ microservices)"/>
+        <org.eventb.core.action name="1" org.eventb.core.assignment="devices(service2)≔devices(service2) ∪ {device2}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="2" org.eventb.core.assignment="DevRegistration ≔ DevRegistration ∪ {{{device2} ↦ template}↦registry}" org.eventb.core.label="act2"/>
+        <org.eventb.core.parameter name="3" org.eventb.core.identifier="registry"/>
+        <org.eventb.core.guard name="4" org.eventb.core.label="grd3" org.eventb.core.predicate="registry ∈ devRegistry"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd4" org.eventb.core.predicate="template ∈ TEMPLATE"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd5" org.eventb.core.predicate="DevRegistration = DevRegistration ∖ {{{device1} ↦ template}↦registry}"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd6" org.eventb.core.predicate="device1 ∈ devices(service1)"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

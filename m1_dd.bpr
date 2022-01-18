@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="PROCESSOR,PRODUCER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(PRODUCER×PROCESSOR)))⊆PRODUCER → (∅ ⦂ ℙ(PROCESSOR))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="CONSUMER,PROCESSOR">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(ℙ(PROCESSOR×PROCESSOR)×CONSUMER)))⊆((∅ ⦂ ℙ(PROCESSOR)) → (∅ ⦂ ℙ(PROCESSOR))) → CONSUMER"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="CONSUMER,PROCESSOR,PRODUCER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(PROCESSOR×(PRODUCER×CONSUMER))))⊆(∅ ⦂ ℙ(PROCESSOR)) ↔ PRODUCER × CONSUMER"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="CLUSTER,PRODUCER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(PRODUCER×CLUSTER))∈PRODUCER ↔ (∅ ⦂ ℙ(CLUSTER))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="CLUSTER,CONSUMER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(CLUSTER×CONSUMER))∈(∅ ⦂ ℙ(CLUSTER)) ↔ CONSUMER"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="1∈ℕ1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv11/INV" org.eventb.core.confidence="500" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="CONSUMER,TOPIC" org.eventb.core.psManual="true">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="500" org.eventb.core.prDisplay="rv (500) (∅∈1 ‥ 1 → (TOPIC ↔ CONSUMER))" org.eventb.core.prGoal="p0" org.eventb.core.prHyps=""/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×ℙ(TOPIC×CONSUMER)))∈1 ‥ 1 → (TOPIC ↔ CONSUMER)"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.review"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/act4/SIM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="1=1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/act6/SIM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="CONSUMER,TOPIC">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×ℙ(TOPIC×CONSUMER)))=(∅ ⦂ ℙ(ℤ×ℙ(TOPIC×CONSUMER)))"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="subscribe_topic/inv11/INV" org.eventb.core.confidence="500" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="CONSUMER,TOPIC" org.eventb.core.psManual="true">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p8"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p9"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="500" org.eventb.core.prDisplay="rv (500) (topicOfInterest{Time ↦ topicOfInterest(Time)∪{top ↦ cons}}∈1 ‥ Time → (TOPIC ↔ CONSUMER))" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        <org.eventb.core.prIdent name="topicOfInterest" org.eventb.core.type="ℙ(ℤ×ℙ(TOPIC×CONSUMER))"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="top∈TOPIC"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Broker⊆CLUSTER">
+            <org.eventb.core.prIdent name="Broker" org.eventb.core.type="ℙ(CLUSTER)"/>
+            <org.eventb.core.prIdent name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Partition⊆CLUSTER">
+            <org.eventb.core.prIdent name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+            <org.eventb.core.prIdent name="Partition" org.eventb.core.type="ℙ(CLUSTER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="topicOfInterest{Time ↦ topicOfInterest(Time)∪{top ↦ cons}}∈1 ‥ Time → (TOPIC ↔ CONSUMER)"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="cons∈CONSUMER"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="topicOfInterest∈1 ‥ Time → (TOPIC ↔ CONSUMER)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="StreamProcessor⊆PROCESSOR">
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="StreamProcessor" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Database⊆PROCESSOR">
+            <org.eventb.core.prIdent name="Database" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="Aggregator⊆PROCESSOR">
+            <org.eventb.core.prIdent name="Aggregator" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.review"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="CONSUMER,TOPIC">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p8"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p9"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10"/>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p11">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p11" org.eventb.core.prHyps="p1"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="topicOfInterest" org.eventb.core.type="ℙ(ℤ×ℙ(TOPIC×CONSUMER))"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="topicOfInterest∈ℤ ⇸ ℙ(TOPIC × CONSUMER)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="top∈TOPIC">
+            <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Broker⊆CLUSTER">
+            <org.eventb.core.prIdent name="Broker" org.eventb.core.type="ℙ(CLUSTER)"/>
+            <org.eventb.core.prIdent name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Partition⊆CLUSTER">
+            <org.eventb.core.prIdent name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+            <org.eventb.core.prIdent name="Partition" org.eventb.core.type="ℙ(CLUSTER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="cons∈CONSUMER">
+            <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Time∈dom(topicOfInterest)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="topicOfInterest∈1 ‥ Time → (TOPIC ↔ CONSUMER)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="StreamProcessor⊆PROCESSOR">
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="StreamProcessor" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Database⊆PROCESSOR">
+            <org.eventb.core.prIdent name="Database" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Time∈dom(topicOfInterest)∧topicOfInterest∈ℤ ⇸ ℙ(TOPIC × CONSUMER)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="Aggregator⊆PROCESSOR">
+            <org.eventb.core.prIdent name="Aggregator" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/inv10/INV" org.eventb.core.confidence="500" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="CONSUMER,TOPIC" org.eventb.core.psManual="true">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p8"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p9"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="500" org.eventb.core.prDisplay="rv (500) (Time+1∈ℕ1)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p1"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        <org.eventb.core.prIdent name="topicOfInterest" org.eventb.core.type="ℙ(ℤ×ℙ(TOPIC×CONSUMER))"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="top∈TOPIC"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Broker⊆CLUSTER">
+            <org.eventb.core.prIdent name="Broker" org.eventb.core.type="ℙ(CLUSTER)"/>
+            <org.eventb.core.prIdent name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Partition⊆CLUSTER">
+            <org.eventb.core.prIdent name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+            <org.eventb.core.prIdent name="Partition" org.eventb.core.type="ℙ(CLUSTER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="cons∈CONSUMER"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Time+1∈ℕ1"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="top ↦ cons∈topicOfInterest(Time)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Time∈ℕ1"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="StreamProcessor⊆PROCESSOR">
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="StreamProcessor" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="Database⊆PROCESSOR">
+            <org.eventb.core.prIdent name="Database" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="Aggregator⊆PROCESSOR">
+            <org.eventb.core.prIdent name="Aggregator" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.review"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/inv11/INV" org.eventb.core.confidence="500" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="CONSUMER,TOPIC" org.eventb.core.psManual="true">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p8"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p9"/>
+                <org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="500" org.eventb.core.prDisplay="rv (500) (topicOfInterest∪{Time ↦ topicOfInterest(Time) ∖ {top ↦ cons}}∈1 ‥ Time+1 → (TOPIC ↔ CONSUMER))" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2"/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Time" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="cons" org.eventb.core.type="CONSUMER"/>
+        <org.eventb.core.prIdent name="top" org.eventb.core.type="TOPIC"/>
+        <org.eventb.core.prIdent name="topicOfInterest" org.eventb.core.type="ℙ(ℤ×ℙ(TOPIC×CONSUMER))"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="top∈TOPIC"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Broker⊆CLUSTER">
+            <org.eventb.core.prIdent name="Broker" org.eventb.core.type="ℙ(CLUSTER)"/>
+            <org.eventb.core.prIdent name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Partition⊆CLUSTER">
+            <org.eventb.core.prIdent name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+            <org.eventb.core.prIdent name="Partition" org.eventb.core.type="ℙ(CLUSTER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="cons∈CONSUMER"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="topicOfInterest∪{Time ↦ topicOfInterest(Time) ∖ {top ↦ cons}}∈1 ‥ Time+1 → (TOPIC ↔ CONSUMER)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="topicOfInterest∈1 ‥ Time → (TOPIC ↔ CONSUMER)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="top ↦ cons∈topicOfInterest(Time)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="StreamProcessor⊆PROCESSOR">
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="StreamProcessor" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="Database⊆PROCESSOR">
+            <org.eventb.core.prIdent name="Database" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="Aggregator⊆PROCESSOR">
+            <org.eventb.core.prIdent name="Aggregator" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.review"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/grd3/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Broker⊆CLUSTER">
+            <org.eventb.core.prIdent name="Broker" org.eventb.core.type="ℙ(CLUSTER)"/>
+            <org.eventb.core.prIdent name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Partition⊆CLUSTER">
+            <org.eventb.core.prIdent name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+            <org.eventb.core.prIdent name="Partition" org.eventb.core.type="ℙ(CLUSTER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="StreamProcessor⊆PROCESSOR">
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="StreamProcessor" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Database⊆PROCESSOR">
+            <org.eventb.core.prIdent name="Database" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Aggregator⊆PROCESSOR">
+            <org.eventb.core.prIdent name="Aggregator" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="unsubscribe_topic/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p3"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p4"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p6"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Broker⊆CLUSTER">
+            <org.eventb.core.prIdent name="Broker" org.eventb.core.type="ℙ(CLUSTER)"/>
+            <org.eventb.core.prIdent name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Partition⊆CLUSTER">
+            <org.eventb.core.prIdent name="CLUSTER" org.eventb.core.type="ℙ(CLUSTER)"/>
+            <org.eventb.core.prIdent name="Partition" org.eventb.core.type="ℙ(CLUSTER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="msgQueue∈MESSAGE ↔ CONSUMER">
+            <org.eventb.core.prIdent name="CONSUMER" org.eventb.core.type="ℙ(CONSUMER)"/>
+            <org.eventb.core.prIdent name="MESSAGE" org.eventb.core.type="ℙ(MESSAGE)"/>
+            <org.eventb.core.prIdent name="msgQueue" org.eventb.core.type="ℙ(MESSAGE×CONSUMER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="StreamProcessor⊆PROCESSOR">
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="StreamProcessor" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Database⊆PROCESSOR">
+            <org.eventb.core.prIdent name="Database" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Aggregator⊆PROCESSOR">
+            <org.eventb.core.prIdent name="Aggregator" org.eventb.core.type="ℙ(PROCESSOR)"/>
+            <org.eventb.core.prIdent name="PROCESSOR" org.eventb.core.type="ℙ(PROCESSOR)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

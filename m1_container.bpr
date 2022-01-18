@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="CONTAINER,DATABASE,SERVICE">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬D_inputs=D_interfaces">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬S_inputs=S_outputs">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬C_inputs=C_interfaces">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SERVICE={S_inputs,S_outputs,S_interfaces}">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬C_outputs=C_interfaces">
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="CONTAINER={C_inputs,C_outputs,C_interfaces}">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬S_outputs=S_interfaces">
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬C_inputs=C_outputs">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="DATABASE={D_inputs,D_outputs,D_interfaces}">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(SERVICE×DATABASE×CONTAINER)))⊆SERVICE × DATABASE → CONTAINER"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces})">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces})">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces})">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬S_inputs=S_interfaces">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬D_inputs=D_outputs">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬D_outputs=D_interfaces">
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ms_container_database/grd3/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="CONTAINER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19"/>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p20"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="cIn" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="cOut" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="c_i" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="c_o" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬D_inputs=D_interfaces">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="s∈SERVICE">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="s" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="c_o∈cOut"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬S_inputs=S_outputs">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬C_inputs=C_interfaces">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SERVICE={S_inputs,S_outputs,S_interfaces}">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬C_outputs=C_interfaces">
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="c_i∈cIn"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="CONTAINER={C_inputs,C_outputs,C_interfaces}">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬S_outputs=S_interfaces">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬C_inputs=C_outputs">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="DATABASE={D_inputs,D_outputs,D_interfaces}">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces})">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces})">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces})">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬S_inputs=S_interfaces">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="c_i∈cIn∧c_o∈cOut"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="c∈CONTAINER">
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬D_inputs=D_outputs">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬D_outputs=D_interfaces">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ms_container_database/grd4/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="SERVICE">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19"/>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p20"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="sIn" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="sOut" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="s_i" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="s_o" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬D_inputs=D_interfaces">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="s∈SERVICE">
+<org.eventb.core.prIdent name="s" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬S_inputs=S_outputs">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬C_inputs=C_interfaces">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SERVICE={S_inputs,S_outputs,S_interfaces}">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="s_i∈sIn∧s_o∈sOut"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬C_outputs=C_interfaces">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="CONTAINER={C_inputs,C_outputs,C_interfaces}">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="s_o∈sOut"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬S_outputs=S_interfaces">
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬C_inputs=C_outputs">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="s_i∈sIn"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="DATABASE={D_inputs,D_outputs,D_interfaces}">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces})">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces})">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces})">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬S_inputs=S_interfaces">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="c∈CONTAINER">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="c" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬D_inputs=D_outputs">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬D_outputs=D_interfaces">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="DATABASE">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬D_inputs=D_interfaces">
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬S_inputs=S_outputs">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬C_inputs=C_interfaces">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SERVICE={S_inputs,S_outputs,S_interfaces}">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬C_outputs=C_interfaces">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="CONTAINER={C_inputs,C_outputs,C_interfaces}">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬S_outputs=S_interfaces">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬C_inputs=C_outputs">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="DATABASE={D_inputs,D_outputs,D_interfaces}">
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces})">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces})">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces})">
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬S_inputs=S_interfaces">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬D_inputs=D_outputs">
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(DATABASE))⊆{D_inputs}"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬D_outputs=D_interfaces">
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="DATABASE">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬D_inputs=D_interfaces">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬S_inputs=S_outputs">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬C_inputs=C_interfaces">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SERVICE={S_inputs,S_outputs,S_interfaces}">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬C_outputs=C_interfaces">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="CONTAINER={C_inputs,C_outputs,C_interfaces}">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬S_outputs=S_interfaces">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(DATABASE))⊆{D_outputs}"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬C_inputs=C_outputs">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="DATABASE={D_inputs,D_outputs,D_interfaces}">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces})">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces})">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces})">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬S_inputs=S_interfaces">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬D_inputs=D_outputs">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬D_outputs=D_interfaces">
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/act6/SIM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="CONTAINER,SERVICE">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬D_inputs=D_interfaces">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(CONTAINER×SERVICE))=(∅ ⦂ ℙ(CONTAINER×SERVICE))"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬S_inputs=S_outputs">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬C_inputs=C_interfaces">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SERVICE={S_inputs,S_outputs,S_interfaces}">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬C_outputs=C_interfaces">
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="CONTAINER={C_inputs,C_outputs,C_interfaces}">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬S_outputs=S_interfaces">
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬C_inputs=C_outputs">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="DATABASE={D_inputs,D_outputs,D_interfaces}">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces})">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces})">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces})">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬S_inputs=S_interfaces">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬D_inputs=D_outputs">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬D_outputs=D_interfaces">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="CONTAINER,DATABASE,SERVICE">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬D_inputs=D_interfaces">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(CONTAINER×(SERVICE×DATABASE))))⊆(∅ ⦂ ℙ(CONTAINER)) → (∅ ⦂ ℙ(SERVICE)) × (∅ ⦂ ℙ(DATABASE))"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬S_inputs=S_outputs">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬C_inputs=C_interfaces">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SERVICE={S_inputs,S_outputs,S_interfaces}">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬C_outputs=C_interfaces">
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="CONTAINER={C_inputs,C_outputs,C_interfaces}">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬S_outputs=S_interfaces">
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬C_inputs=C_outputs">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="DATABASE={D_inputs,D_outputs,D_interfaces}">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces})">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces})">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces})">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬S_inputs=S_interfaces">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬D_inputs=D_outputs">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬D_outputs=D_interfaces">
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="CONTAINER,DATABASE,SERVICE">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13,p14,p15"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬D_inputs=D_interfaces">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬S_inputs=S_outputs">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬C_inputs=C_interfaces">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="SERVICE={S_inputs,S_outputs,S_interfaces}">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬C_outputs=C_interfaces">
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="CONTAINER={C_inputs,C_outputs,C_interfaces}">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬S_outputs=S_interfaces">
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬C_inputs=C_outputs">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="DATABASE={D_inputs,D_outputs,D_interfaces}">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces})">
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces})">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces})">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬S_inputs=S_interfaces">
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬D_inputs=D_outputs">
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(DATABASE×SERVICE×CONTAINER)))⊆(∅ ⦂ ℙ(DATABASE)) × (∅ ⦂ ℙ(SERVICE)) → (∅ ⦂ ℙ(CONTAINER))"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬D_outputs=D_interfaces">
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬D_inputs=D_interfaces">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬S_inputs=S_outputs">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬C_inputs=C_interfaces">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="SERVICE={S_inputs,S_outputs,S_interfaces}">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬C_outputs=C_interfaces">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="CONTAINER={C_inputs,C_outputs,C_interfaces}">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬S_outputs=S_interfaces">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬C_inputs=C_outputs">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="DATABASE={D_inputs,D_outputs,D_interfaces}">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces})">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces})">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces})">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬S_inputs=S_interfaces">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬D_inputs=D_outputs">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬D_outputs=D_interfaces">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/act2/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬D_inputs=D_interfaces">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬S_inputs=S_outputs">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬C_inputs=C_interfaces">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="SERVICE={S_inputs,S_outputs,S_interfaces}">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬C_outputs=C_interfaces">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="CONTAINER={C_inputs,C_outputs,C_interfaces}">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬S_outputs=S_interfaces">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬C_inputs=C_outputs">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="DATABASE={D_inputs,D_outputs,D_interfaces}">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(CONTAINER,{C_inputs},{C_outputs},{C_interfaces})">
+<org.eventb.core.prIdent name="CONTAINER" org.eventb.core.type="ℙ(CONTAINER)"/>
+<org.eventb.core.prIdent name="C_inputs" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_interfaces" org.eventb.core.type="CONTAINER"/>
+<org.eventb.core.prIdent name="C_outputs" org.eventb.core.type="CONTAINER"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(SERVICE,{S_inputs},{S_outputs},{S_interfaces})">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_outputs" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="partition(DATABASE,{D_inputs},{D_outputs},{D_interfaces})">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬S_inputs=S_interfaces">
+<org.eventb.core.prIdent name="SERVICE" org.eventb.core.type="ℙ(SERVICE)"/>
+<org.eventb.core.prIdent name="S_inputs" org.eventb.core.type="SERVICE"/>
+<org.eventb.core.prIdent name="S_interfaces" org.eventb.core.type="SERVICE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬D_inputs=D_outputs">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_inputs" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬D_outputs=D_interfaces">
+<org.eventb.core.prIdent name="DATABASE" org.eventb.core.type="ℙ(DATABASE)"/>
+<org.eventb.core.prIdent name="D_interfaces" org.eventb.core.type="DATABASE"/>
+<org.eventb.core.prIdent name="D_outputs" org.eventb.core.type="DATABASE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

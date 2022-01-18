@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="SYSTEM" org.eventb.core.type="ℙ(SYSTEM)"/>
+        <org.eventb.core.poIdentifier name="PROPERTIES" org.eventb.core.type="ℙ(PROPERTIES)"/>
+        <org.eventb.core.poIdentifier name="DEVICE" org.eventb.core.type="ℙ(DEVICE)"/>
+        <org.eventb.core.poIdentifier name="EmbeddedDevice" org.eventb.core.type="DEVICE"/>
+        <org.eventb.core.poIdentifier name="Sensor" org.eventb.core.type="DEVICE"/>
+        <org.eventb.core.poIdentifier name="Actuator" org.eventb.core.type="DEVICE"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/IOT_MS2/c0_dp.bpo|org.eventb.core.poFile#c0_dp|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(DEVICE,{Sensor},{Actuator},{EmbeddedDevice})" org.eventb.core.source="/IOT_MS2/c0_dp.buc|org.eventb.core.contextFile#c0_dp|org.eventb.core.axiom#3"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

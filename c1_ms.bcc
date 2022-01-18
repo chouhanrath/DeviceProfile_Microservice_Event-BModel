@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(ExecutionPattern,{series},{parallel})" org.eventb.core.source="/IOT_MS2/c1_ms.buc|org.eventb.core.contextFile#c1_ms|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scCarrierSet name="Condition" org.eventb.core.source="/IOT_MS2/c1_ms.buc|org.eventb.core.contextFile#c1_ms|org.eventb.core.carrierSet#," org.eventb.core.type="ℙ(Condition)"/>
+    <org.eventb.core.scCarrierSet name="SchedulingOrder" org.eventb.core.source="/IOT_MS2/c1_ms.buc|org.eventb.core.contextFile#c1_ms|org.eventb.core.carrierSet#+" org.eventb.core.type="ℙ(SchedulingOrder)"/>
+    <org.eventb.core.scCarrierSet name="ExecutionPattern" org.eventb.core.source="/IOT_MS2/c1_ms.buc|org.eventb.core.contextFile#c1_ms|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(ExecutionPattern)"/>
+    <org.eventb.core.scConstant name="parallel" org.eventb.core.source="/IOT_MS2/c1_ms.buc|org.eventb.core.contextFile#c1_ms|org.eventb.core.constant#)" org.eventb.core.type="ExecutionPattern"/>
+    <org.eventb.core.scCarrierSet name="Queue" org.eventb.core.source="/IOT_MS2/c1_ms.buc|org.eventb.core.contextFile#c1_ms|org.eventb.core.carrierSet#-" org.eventb.core.type="ℙ(Queue)"/>
+    <org.eventb.core.scConstant name="series" org.eventb.core.source="/IOT_MS2/c1_ms.buc|org.eventb.core.contextFile#c1_ms|org.eventb.core.constant#(" org.eventb.core.type="ExecutionPattern"/>
+</org.eventb.core.scContextFile>

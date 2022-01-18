@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="D" org.eventb.core.type="ℙ(D)"/>
+        <org.eventb.core.poIdentifier name="ACTIONS" org.eventb.core.type="ℙ(ACTIONS)"/>
+        <org.eventb.core.poIdentifier name="MS" org.eventb.core.type="ℙ(MS)"/>
+        <org.eventb.core.poIdentifier name="TEMPLATE" org.eventb.core.type="ℙ(TEMPLATE)"/>
+        <org.eventb.core.poIdentifier name="DATAFORMAT" org.eventb.core.type="ℙ(DATAFORMAT)"/>
+        <org.eventb.core.poIdentifier name="PROTOCOL" org.eventb.core.type="ℙ(PROTOCOL)"/>
+        <org.eventb.core.poIdentifier name="REGISTRY" org.eventb.core.type="ℙ(REGISTRY)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="devices" org.eventb.core.type="ℙ(MS×ℙ(D))"/>
+        <org.eventb.core.poIdentifier name="msRegistration" org.eventb.core.type="ℙ(MS×REGISTRY)"/>
+        <org.eventb.core.poIdentifier name="buildMicroservice" org.eventb.core.type="ℙ(TEMPLATE×PROTOCOL×DATAFORMAT)"/>
+        <org.eventb.core.poIdentifier name="msRegistry" org.eventb.core.type="ℙ(REGISTRY)"/>
+        <org.eventb.core.poIdentifier name="DevRegistration" org.eventb.core.type="ℙ(ℙ(ℙ(D)×TEMPLATE)×REGISTRY)"/>
+        <org.eventb.core.poIdentifier name="microservices" org.eventb.core.type="ℙ(MS)"/>
+        <org.eventb.core.poIdentifier name="devRegistry" org.eventb.core.type="ℙ(REGISTRY)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservicf"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(MS×ℙ(D)))∈(∅ ⦂ ℙ(MS)) → ℙ(D)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservicf"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(REGISTRY))⊆REGISTRY∧(∅ ⦂ ℙ(REGISTRY))⊆REGISTRY" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#="/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#="/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservicf"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(ℙ(D)×TEMPLATE)×REGISTRY))∈(ℙ(D) ↔ TEMPLATE) → (∅ ⦂ ℙ(REGISTRY))" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservicf"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(MS×REGISTRY))∈(∅ ⦂ ℙ(MS)) → (∅ ⦂ ℙ(REGISTRY))" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#?"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#?"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTbuildMicroservicf" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="msRegistration'" org.eventb.core.type="ℙ(MS×REGISTRY)"/>
+        <org.eventb.core.poIdentifier name="buildMicroservice'" org.eventb.core.type="ℙ(TEMPLATE×PROTOCOL×DATAFORMAT)"/>
+        <org.eventb.core.poIdentifier name="msRegistry'" org.eventb.core.type="ℙ(REGISTRY)"/>
+        <org.eventb.core.poIdentifier name="devices'" org.eventb.core.type="ℙ(MS×ℙ(D))"/>
+        <org.eventb.core.poIdentifier name="microservices'" org.eventb.core.type="ℙ(MS)"/>
+        <org.eventb.core.poIdentifier name="devRegistry'" org.eventb.core.type="ℙ(REGISTRY)"/>
+        <org.eventb.core.poIdentifier name="DevRegistration'" org.eventb.core.type="ℙ(ℙ(ℙ(D)×TEMPLATE)×REGISTRY)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPbuildMicroservicf" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTIDENTbuildMicroservicf" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTbuildMicroservicg" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="buildMicroservice'" org.eventb.core.type="ℙ(TEMPLATE×PROTOCOL×DATAFORMAT)"/>
+        <org.eventb.core.poIdentifier name="protocol" org.eventb.core.type="PROTOCOL"/>
+        <org.eventb.core.poIdentifier name="dataFormat" org.eventb.core.type="DATAFORMAT"/>
+        <org.eventb.core.poIdentifier name="template" org.eventb.core.type="TEMPLATE"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPbuildMicroservicg" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTIDENTbuildMicroservicg" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="template∈TEMPLATE" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#C|org.eventb.core.guard#-"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="protocol∈PROTOCOL" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#C|org.eventb.core.guard#."/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="dataFormat∈DATAFORMAT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#C|org.eventb.core.guard#\/"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="registration/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservich"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="devices{a_service ↦ (∅ ⦂ ℙ(D))}∈microservices∪{a_service} → ℙ(D)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#-"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#registration\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="registration/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservich"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="msRegistration∪{a_service ↦ registry}∈microservices∪{a_service} → msRegistry" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#?"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#-"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#?"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#registration\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTbuildMicroservich" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="msRegistration'" org.eventb.core.type="ℙ(MS×REGISTRY)"/>
+        <org.eventb.core.poIdentifier name="registry" org.eventb.core.type="REGISTRY"/>
+        <org.eventb.core.poIdentifier name="a_service" org.eventb.core.type="MS"/>
+        <org.eventb.core.poIdentifier name="devices'" org.eventb.core.type="ℙ(MS×ℙ(D))"/>
+        <org.eventb.core.poIdentifier name="microservices'" org.eventb.core.type="ℙ(MS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPbuildMicroservich" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTIDENTbuildMicroservich" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="a_service∈MS ∖ microservices" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#-|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="registry∈msRegistry" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#-|org.eventb.core.guard#+"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="deregistration/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservici"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{a_service} ⩤ devices∈microservices ∖ {a_service} → ℙ(D)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#."/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#deregistration\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="deregistration/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservici"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="msRegistration ∖ {a_service ↦ registry}∈microservices ∖ {a_service} → msRegistry" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#?"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#."/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#?"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#deregistration\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTbuildMicroservici" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="msRegistration'" org.eventb.core.type="ℙ(MS×REGISTRY)"/>
+        <org.eventb.core.poIdentifier name="registry" org.eventb.core.type="REGISTRY"/>
+        <org.eventb.core.poIdentifier name="a_service" org.eventb.core.type="MS"/>
+        <org.eventb.core.poIdentifier name="devices'" org.eventb.core.type="ℙ(MS×ℙ(D))"/>
+        <org.eventb.core.poIdentifier name="microservices'" org.eventb.core.type="ℙ(MS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPbuildMicroservici" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTIDENTbuildMicroservici" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="a_service∈microservices" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#.|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="registry∈msRegistry" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#.|org.eventb.core.guard#,"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="add_device/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservicj"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="devices{a_service ↦ devices(a_service)∪{a_device}}∈microservices → ℙ(D)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#\/"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#add_device\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="add_device/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservicj"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="DevRegistration∪{{{a_device} ↦ template} ↦ registry}∈(ℙ(D) ↔ TEMPLATE) → devRegistry" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#\/"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#add_device\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="add_device/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservicj"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="a_service∈dom(devices)∧devices∈MS ⇸ ℙ(D)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#\/|org.eventb.core.action#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#\/|org.eventb.core.action#,"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservicj"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTbuildMicroservicj" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="a_device" org.eventb.core.type="D"/>
+        <org.eventb.core.poIdentifier name="registry" org.eventb.core.type="REGISTRY"/>
+        <org.eventb.core.poIdentifier name="a_service" org.eventb.core.type="MS"/>
+        <org.eventb.core.poIdentifier name="devices'" org.eventb.core.type="ℙ(MS×ℙ(D))"/>
+        <org.eventb.core.poIdentifier name="template" org.eventb.core.type="TEMPLATE"/>
+        <org.eventb.core.poIdentifier name="DevRegistration'" org.eventb.core.type="ℙ(ℙ(ℙ(D)×TEMPLATE)×REGISTRY)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPbuildMicroservicj" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTIDENTbuildMicroservicj" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="a_service∈microservices" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#\/|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="a_device∈D" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#\/|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="a_device∈D ∖ union(ran(devices))" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#\/|org.eventb.core.guard#+"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="template∈TEMPLATE" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#\/|org.eventb.core.guard#."/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="registry∈devRegistry" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#\/|org.eventb.core.guard#1"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="remove_device/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTHYPbuildMicroservick("/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="a_service∈dom(devices)∧devices∈MS ⇸ ℙ(D)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#0|org.eventb.core.guard#*"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#0|org.eventb.core.guard#*"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTHYPbuildMicroservick("/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="remove_device/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservick"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="devices{a_service ↦ devices(a_service) ∖ {a_device}}∈microservices → ℙ(D)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#remove_device\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="remove_device/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservick"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="DevRegistration ∖ {{{a_device} ↦ template} ↦ registry}∈(ℙ(D) ↔ TEMPLATE) → devRegistry" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#remove_device\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="remove_device/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservick"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="a_service∈dom(devices)∧devices∈MS ⇸ ℙ(D)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#0|org.eventb.core.action#+"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#0|org.eventb.core.action#+"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservick"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTbuildMicroservick" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="a_device" org.eventb.core.type="D"/>
+        <org.eventb.core.poIdentifier name="registry" org.eventb.core.type="REGISTRY"/>
+        <org.eventb.core.poIdentifier name="a_service" org.eventb.core.type="MS"/>
+        <org.eventb.core.poIdentifier name="devices'" org.eventb.core.type="ℙ(MS×ℙ(D))"/>
+        <org.eventb.core.poIdentifier name="template" org.eventb.core.type="TEMPLATE"/>
+        <org.eventb.core.poIdentifier name="DevRegistration'" org.eventb.core.type="ℙ(ℙ(ℙ(D)×TEMPLATE)×REGISTRY)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPbuildMicroservick(" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTIDENTbuildMicroservick" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="a_device∈D" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#0|org.eventb.core.guard#,"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="a_service∈microservices" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#0|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPbuildMicroservick" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTHYPbuildMicroservick(" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="a_device∈devices(a_service)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#0|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="template∈TEMPLATE" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#0|org.eventb.core.guard#."/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="registry∈devRegistry" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#0|org.eventb.core.guard#1"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="replace_device/grd6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTHYPbuildMicroservicl+"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="service1∈dom(devices)∧devices∈MS ⇸ ℙ(D)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#:|org.eventb.core.guard#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#:|org.eventb.core.guard#-"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTHYPbuildMicroservicl+"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="replace_device/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservicl"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="devices{service2 ↦ devices(service2)∪{device2}}∈microservices → ℙ(D)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#:"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#replace_device\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="replace_device/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservicl"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="DevRegistration∪{{{device2} ↦ template} ↦ registry}∈(ℙ(D) ↔ TEMPLATE) → devRegistry" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#:"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poSequent#replace_device\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="replace_device/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservicl"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="service2∈dom(devices)∧devices∈MS ⇸ ℙ(D)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#:|org.eventb.core.action#1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#:|org.eventb.core.action#1"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTALLHYPbuildMicroservicl"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTbuildMicroservicl" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="device1" org.eventb.core.type="D"/>
+        <org.eventb.core.poIdentifier name="registry" org.eventb.core.type="REGISTRY"/>
+        <org.eventb.core.poIdentifier name="service1" org.eventb.core.type="MS"/>
+        <org.eventb.core.poIdentifier name="device2" org.eventb.core.type="D"/>
+        <org.eventb.core.poIdentifier name="devices'" org.eventb.core.type="ℙ(MS×ℙ(D))"/>
+        <org.eventb.core.poIdentifier name="service2" org.eventb.core.type="MS"/>
+        <org.eventb.core.poIdentifier name="template" org.eventb.core.type="TEMPLATE"/>
+        <org.eventb.core.poIdentifier name="DevRegistration'" org.eventb.core.type="ℙ(ℙ(ℙ(D)×TEMPLATE)×REGISTRY)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPbuildMicroservicl+" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTIDENTbuildMicroservicl" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="device1∈D∧device2∈D" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#:|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="service1∈microservices∧service2∈microservices" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#:|org.eventb.core.guard#0"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="registry∈devRegistry" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#:|org.eventb.core.guard#4"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="template∈TEMPLATE" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#:|org.eventb.core.guard#+"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="DevRegistration=DevRegistration ∖ {{{device1} ↦ template} ↦ registry}" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#:|org.eventb.core.guard#,"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPbuildMicroservicl" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#EVTHYPbuildMicroservicl+" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="device1∈devices(service1)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.event#:|org.eventb.core.guard#-"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/IOT_MS2/m0_dt.bpo|org.eventb.core.poFile#m0_dt|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="microservices⊆MS" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="devices∈microservices → ℙ(D)" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="buildMicroservice⊆TEMPLATE × PROTOCOL × DATAFORMAT" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#A"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="msRegistry⊆REGISTRY∧devRegistry⊆REGISTRY" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#="/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="DevRegistration∈(ℙ(D) ↔ TEMPLATE) → devRegistry" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#8"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="msRegistration∈microservices → msRegistry" org.eventb.core.source="/IOT_MS2/m0_dt.bum|org.eventb.core.machineFile#m0_dt|org.eventb.core.invariant#?"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

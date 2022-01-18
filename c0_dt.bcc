@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scCarrierSet name="D" org.eventb.core.source="/IOT_MS2/c0_dt.buc|org.eventb.core.contextFile#c0_dt|org.eventb.core.carrierSet#-" org.eventb.core.type="ℙ(D)"/>
+    <org.eventb.core.scCarrierSet name="ACTIONS" org.eventb.core.source="/IOT_MS2/c0_dt.buc|org.eventb.core.contextFile#c0_dt|org.eventb.core.carrierSet#8" org.eventb.core.type="ℙ(ACTIONS)"/>
+    <org.eventb.core.scCarrierSet name="MS" org.eventb.core.source="/IOT_MS2/c0_dt.buc|org.eventb.core.contextFile#c0_dt|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(MS)"/>
+    <org.eventb.core.scCarrierSet name="TEMPLATE" org.eventb.core.source="/IOT_MS2/c0_dt.buc|org.eventb.core.contextFile#c0_dt|org.eventb.core.carrierSet#=" org.eventb.core.type="ℙ(TEMPLATE)"/>
+    <org.eventb.core.scCarrierSet name="DATAFORMAT" org.eventb.core.source="/IOT_MS2/c0_dt.buc|org.eventb.core.contextFile#c0_dt|org.eventb.core.carrierSet#@" org.eventb.core.type="ℙ(DATAFORMAT)"/>
+    <org.eventb.core.scCarrierSet name="PROTOCOL" org.eventb.core.source="/IOT_MS2/c0_dt.buc|org.eventb.core.contextFile#c0_dt|org.eventb.core.carrierSet#?" org.eventb.core.type="ℙ(PROTOCOL)"/>
+    <org.eventb.core.scCarrierSet name="REGISTRY" org.eventb.core.source="/IOT_MS2/c0_dt.buc|org.eventb.core.contextFile#c0_dt|org.eventb.core.carrierSet#&gt;" org.eventb.core.type="ℙ(REGISTRY)"/>
+</org.eventb.core.scContextFile>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="Identity ≔ ∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="deviceId ≔ ∅" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="Platform ≔ ∅" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="hosting ≔ ∅" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="Input ≔ ∅" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="Stimulus ≔ ∅" org.eventb.core.label="act6"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="Trigger ≔ ∅" org.eventb.core.label="act7"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="Action ≔ ∅" org.eventb.core.label="act8"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="Event ≔ ∅" org.eventb.core.label="act9"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="sensingFlag ≔ TRUE" org.eventb.core.label="act10"/>
+        <org.eventb.core.action name="1" org.eventb.core.assignment="sensingData ≔ ∅" org.eventb.core.label="act11"/>
+        <org.eventb.core.action name="2" org.eventb.core.assignment="Time ≔ ∅" org.eventb.core.label="act12"/>
+        <org.eventb.core.action name="3" org.eventb.core.assignment="obsProperty ≔ ∅" org.eventb.core.label="act13"/>
+        <org.eventb.core.action name="4" org.eventb.core.assignment="featureOfInterest ≔ ∅" org.eventb.core.label="act14"/>
+        <org.eventb.core.action name="5" org.eventb.core.assignment="Context  ≔ ∅" org.eventb.core.label="act15"/>
+        <org.eventb.core.action name="6" org.eventb.core.assignment="Output ≔ ∅" org.eventb.core.label="act16"/>
+        <org.eventb.core.action name="7" org.eventb.core.assignment="deviceType ≔ ∅" org.eventb.core.label="act17"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="(" org.eventb.core.identifier="Identity"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="deviceId"/>
+    <org.eventb.core.seesContext name="," org.eventb.core.target="c0_dp"/>
+    <org.eventb.core.variable name="-" org.eventb.core.identifier="Platform"/>
+    <org.eventb.core.variable name="/" org.eventb.core.identifier="hosting"/>
+    <org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Deployment">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="d"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="uri"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="p"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="d ∈ DEVICE"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="uri ∈ Identity"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="p ∈ Platform"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="deviceId(d)≔uri" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="hosting(d)≔p" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="deviceType ≔ {Sensor,Actuator,EmbeddedDevice}" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name=")" org.eventb.core.label="inv1" org.eventb.core.predicate="Identity ⊆ PROPERTIES"/>
+    <org.eventb.core.invariant name="+" org.eventb.core.comment="each device has its identity" org.eventb.core.label="inv2" org.eventb.core.predicate="deviceId ∈ DEVICE → Identity"/>
+    <org.eventb.core.variable name="2" org.eventb.core.identifier="Input"/>
+    <org.eventb.core.variable name="4" org.eventb.core.identifier="Stimulus"/>
+    <org.eventb.core.variable name="6" org.eventb.core.identifier="Trigger"/>
+    <org.eventb.core.variable name="8" org.eventb.core.identifier="Action"/>
+    <org.eventb.core.variable name=":" org.eventb.core.identifier="Event"/>
+    <org.eventb.core.variable name="=" org.eventb.core.identifier="sensingFlag"/>
+    <org.eventb.core.variable name="?" org.eventb.core.identifier="sensingData"/>
+    <org.eventb.core.variable name="A" org.eventb.core.identifier="Time"/>
+    <org.eventb.core.variable name="C" org.eventb.core.identifier="obsProperty"/>
+    <org.eventb.core.variable name="D" org.eventb.core.identifier="featureOfInterest"/>
+    <org.eventb.core.variable name="E" org.eventb.core.identifier="Context"/>
+    <org.eventb.core.variable name="G" org.eventb.core.identifier="Output"/>
+    <org.eventb.core.event name="I" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Sensing">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="i"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="sensor"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="(i ∈ Input)∧(s ∈ Stimulus)"/>
+        <org.eventb.core.parameter name="+" org.eventb.core.identifier="s"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="i ≠ s"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="sensor ∈ DEVICE"/>
+        <org.eventb.core.parameter name="-" org.eventb.core.identifier="sensing"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd4" org.eventb.core.predicate="sensing ∈ Action"/>
+        <org.eventb.core.parameter name="/" org.eventb.core.identifier="obs"/>
+        <org.eventb.core.parameter name="0" org.eventb.core.identifier="foi"/>
+        <org.eventb.core.guard name="1" org.eventb.core.label="grd5" org.eventb.core.predicate="(obs∈obsProperty)∧(foi∈featureOfInterest)"/>
+        <org.eventb.core.action name="2" org.eventb.core.assignment="Trigger≔{i ↦ sensor} ∩ {s ↦ sensor} ∩ ∅" org.eventb.core.comment="user input or stimulus" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="3" org.eventb.core.assignment="Event≔{sensor↦sensing}" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="4" org.eventb.core.assignment="sensingFlag≔TRUE" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="5" org.eventb.core.assignment="Context≔{obs↦foi}" org.eventb.core.label="act4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="J" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Actuation">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="actuator"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="actuator ∈ DEVICE"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="actuableProperty"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="actuableProperty ∈ Action"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="Event≔Event ∩ {actuator↦actuableProperty} ∩ ∅" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="K" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Result">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="obs"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="foi"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="t"/>
+        <org.eventb.core.parameter name="*" org.eventb.core.identifier="data"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd1" org.eventb.core.predicate="(obs∈obsProperty)∧(foi∈featureOfInterest)"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="t ∈ Time"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd3" org.eventb.core.predicate="data ∈ sensingData"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd4" org.eventb.core.predicate="sensingFlag=TRUE"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd5" org.eventb.core.predicate="Context={obs↦foi}"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="Output ≔ Output ∪ {{data ↦ {obs↦foi}}↦t}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="M" org.eventb.core.label="inv3" org.eventb.core.predicate="deviceType ∈ ℙ (DEVICE)"/>
+    <org.eventb.core.invariant name="." org.eventb.core.label="inv4" org.eventb.core.predicate="Platform ⊆ SYSTEM"/>
+    <org.eventb.core.invariant name="0" org.eventb.core.label="inv5" org.eventb.core.predicate="hosting ∈ DEVICE → Platform"/>
+    <org.eventb.core.invariant name="3" org.eventb.core.label="inv6" org.eventb.core.predicate="Input ⊆ USER"/>
+    <org.eventb.core.invariant name="5" org.eventb.core.label="inv7" org.eventb.core.predicate="Stimulus ⊆ USER"/>
+    <org.eventb.core.invariant name="7" org.eventb.core.label="inv8" org.eventb.core.predicate="(Trigger ∈ Input↔DEVICE) ∨ (Trigger ∈ Stimulus↔DEVICE)"/>
+    <org.eventb.core.invariant name="9" org.eventb.core.label="inv9" org.eventb.core.predicate="Action ⊆ PROPERTIES"/>
+    <org.eventb.core.invariant name=";" org.eventb.core.label="inv10" org.eventb.core.predicate="Event ∈ DEVICE ↔ Action"/>
+    <org.eventb.core.invariant name="&gt;" org.eventb.core.label="inv11" org.eventb.core.predicate="sensingFlag ∈ BOOL"/>
+    <org.eventb.core.invariant name="@" org.eventb.core.label="inv12" org.eventb.core.predicate="(sensingData ⊆ DEVICE) ∧ (Time ⊆ DEVICE)"/>
+    <org.eventb.core.invariant name="B" org.eventb.core.label="inv13" org.eventb.core.predicate="(obsProperty ⊆ PROPERTIES) ∧ (featureOfInterest ⊆ PROPERTIES)"/>
+    <org.eventb.core.invariant name="F" org.eventb.core.label="inv14" org.eventb.core.predicate="Context ∈ obsProperty ↔ featureOfInterest"/>
+    <org.eventb.core.invariant name="H" org.eventb.core.label="inv15" org.eventb.core.predicate="Output ∈ ((sensingData ↔ (obsProperty ↔ featureOfInterest))↔Time)"/>
+    <org.eventb.core.variable name="N" org.eventb.core.identifier="deviceType"/>
+    <org.eventb.core.seesContext name="O" org.eventb.core.target="c0_dt"/>
+</org.eventb.core.machineFile>

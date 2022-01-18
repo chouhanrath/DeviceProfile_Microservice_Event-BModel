@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="D" org.eventb.core.type="ℙ(D)"/>
+        <org.eventb.core.poIdentifier name="ACTIONS" org.eventb.core.type="ℙ(ACTIONS)"/>
+        <org.eventb.core.poIdentifier name="MS" org.eventb.core.type="ℙ(MS)"/>
+        <org.eventb.core.poIdentifier name="TEMPLATE" org.eventb.core.type="ℙ(TEMPLATE)"/>
+        <org.eventb.core.poIdentifier name="DATAFORMAT" org.eventb.core.type="ℙ(DATAFORMAT)"/>
+        <org.eventb.core.poIdentifier name="PROTOCOL" org.eventb.core.type="ℙ(PROTOCOL)"/>
+        <org.eventb.core.poIdentifier name="REGISTRY" org.eventb.core.type="ℙ(REGISTRY)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/IOT_MS2/c0_dt.bpo|org.eventb.core.poFile#c0_dt|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
+</org.eventb.core.poFile>
